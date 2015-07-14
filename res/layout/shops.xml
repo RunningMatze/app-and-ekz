@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back_zettel" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+			style="@style/EkzButton"
+            android:id="@+id/buttonAddShop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="@string/addShop" />
+
+        <Button
+			style="@style/EkzButton"
+            android:id="@+id/buttonBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="@string/back" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/shopList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="#0000FF"
+        android:dividerHeight="2dp" >
+        <!-- Preview: listitem=@layout/shop_listitem --> 
+        
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sa_wrapper"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	android:background="@drawable/back_zettel"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/transparent"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+	        android:background="@android:color/transparent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/labelShop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/shop"
+                android:shadowColor="#000000"
+	            android:shadowDx="1"
+	            android:shadowDy="1"
+	            android:shadowRadius="1.5"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/textShopname"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:capitalize="words"
+                android:hint="@string/shop_name"
+                android:inputType="textCapWords|textPersonName"
+    			android:background="#aaffff00"
+		        android:layout_marginBottom="8dp"
+		        android:paddingBottom="8dp"
+		        android:paddingLeft="6dp"
+		        android:paddingTop="8dp"
+                android:text="" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/labelOrt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/in"
+                android:shadowColor="#000000"
+	            android:shadowDx="1"
+	            android:shadowDy="1"
+	            android:shadowRadius="1.5"
+                android:textAppearance="?android:attr/textAppearanceLarge" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/textOrt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:capitalize="words"
+                android:hint="@string/shop_ort"
+                android:inputType="textCapWords|textPersonName"
+				android:background="#aaffff00"
+		        android:layout_marginBottom="8dp"
+		        android:paddingBottom="8dp"
+		        android:paddingLeft="6dp"
+		        android:paddingTop="8dp"
+                android:text="" >
+            </EditText>
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1.0" >
+
+                <Button
+					style="@style/EkzButton"
+                    android:id="@+id/buttonOK"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:enabled="false"
+                    android:text="@string/uebernehmen" >
+                </Button>
+
+                <Button
+					style="@style/EkzButton"
+                    android:id="@+id/buttonCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/cancel" >
+                </Button>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

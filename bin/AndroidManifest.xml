@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="de.androloc.einkaufszettel"
+    android:versionCode="4"
+    android:versionName="1.1.4">
+
+    <uses-sdk android:minSdkVersion="7" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <supports-screens android:largeScreens="true" android:normalScreens="true" android:smallScreens="true"/>
+
+    <application
+        android:icon="@drawable/einkaufslisten"
+        android:label="@string/app_icon_text"
+        android:description="@string/app_icon_text">
+        <activity
+            android:label="@string/app_icon_text"
+            android:name=".EinkaufszettelActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar">
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity 
+            android:label="@string/my_shops"
+            android:name=".ShopsActivity" >
+            <intent-filter >
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity 
+            android:name=".ShopEditActivity"
+            android:label="@string/edit_shop">
+            <intent-filter >
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity 
+            android:name=".ShopAddActivity"
+            android:label="@string/shop_add">
+            <intent-filter >
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity 
+            android:name=".EinkaufAddActivity"
+            android:label="@string/einkauf_add">
+            <intent-filter >
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity 
+            android:name=".ArtikelActivity" 
+            android:label="@string/artikelliste">
+            <intent-filter >
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity 
+            android:name=".ArtikelEditActivity" 
+            android:label="@string/edit_artikel">
+            <intent-filter >
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity 
+            android:name=".ArtikelAddActivity" 
+            android:label="@string/artikel_add"
+            android:theme="@android:style/Theme.Black.NoTitleBar">
+            <intent-filter >
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".EinkaeufeActivity" 
+            android:label="@string/akteinkaeufe">
+            <intent-filter >
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity 
+            android:name=".EinkaufActivity" 
+            android:label="@string/akteinkauf"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter >
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity 
+            android:name=".EinkaufDatenActivity" 
+            android:label="@string/einkaufsdaten">
+            <intent-filter >
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity 
+            android:label="@string/aktzettel" 
+            android:name=".EinkaufArtikelActivity"
+			android:configChanges="orientation|keyboardHidden">
+            	<intent-filter >
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity 
+            android:name=".ArtikelListeActivity" 
+            android:label="@string/artikelliste_einkauf">
+         	<intent-filter >
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".EinkaufEditActivity" android:label="@string/einkauf_edit"></activity>
+        <activity android:name="ZettelPreferenceActivity"></activity>
+        
+    </application>
+
+</manifest>

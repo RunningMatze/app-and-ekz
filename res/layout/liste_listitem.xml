@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="36dp"
+    android:paddingLeft="8dp"
+    android:background="@drawable/zettel_back">
+
+    <TextView
+        android:id="@+id/textAnzahl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:minWidth="40dp"
+        android:text="99x"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000080"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textArtikel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/textAnzahl"
+        android:text="Artikel"
+        android:textColor="#000080"
+		android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

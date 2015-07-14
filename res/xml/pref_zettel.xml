@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <CheckBoxPreference android:summaryOff="Der Einkaufszettel wird automatisch ausgerichtet" android:summaryOn="Der Einkaufszettel wird immer vertikal ausgerichtet" android:key="fixed_orientation" android:title="Immer vertikal" android:defaultValue="true"/><CheckBoxPreference 
+        android:title="Streichung sortieren" 
+        android:key="sort_strike" 
+        android:summaryOff="Gestrichene Artikel werden nicht mehr an das Listenende sortiert" 
+        android:summaryOn="Gestrichene Artikel werden an das Listenende sortiert"/>
+    <CheckBoxPreference 
+        android:title="Info einblenden" 
+        android:summaryOff='Info für "langes Anklicken zum Streichen" wird nicht mehr eingeblendet' 
+        android:summaryOn='Info für "langes Anklicken zum Streichen" wird eingeblendet' 
+        android:key="show_hint" 
+        android:defaultValue="true"/>
+    
+</PreferenceScreen>

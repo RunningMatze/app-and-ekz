@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ea_wrapper"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/back_zettel"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/transparent"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="6dp" >
+
+                <TextView
+                    android:id="@+id/textShopTitel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shop_dp"
+			    	android:textColor="#ffffff"
+	                android:shadowColor="#000000"
+		            android:shadowDx="1"
+		            android:shadowDy="1"
+		            android:shadowRadius="1.5"
+		           	android:textSize="15sp" />
+
+                <Spinner
+                    android:id="@+id/spinnerShops"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/textShopTitel" >
+
+                    <!-- Preview: listitem=@layout/shop_listitem -->
+                </Spinner>
+
+                <TextView
+                    android:id="@+id/textDatumTitel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/spinnerShops"
+                    android:text="@string/einkauf_datum"
+			    	android:textColor="#ffffff"
+	                android:shadowColor="#000000"
+		            android:shadowDx="1"
+		            android:shadowDy="1"
+		            android:shadowRadius="1.5"
+		           	android:textSize="15sp" />
+
+                <DatePicker
+                    android:id="@+id/dateEinkauf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/textDatumTitel" />
+
+                <TextView
+                    android:id="@+id/textBemerkungTitel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/dateEinkauf"
+                    android:text="@string/bemerkung"
+			    	android:textColor="#ffffff"
+	                android:shadowColor="#000000"
+		            android:shadowDx="1"
+		            android:shadowDy="1"
+		            android:shadowRadius="1.5"
+		           	android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/editTextBemerkung"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textBemerkungTitel"
+					android:background="#aaffff00"
+			        android:layout_marginBottom="8dp"
+			        android:paddingBottom="8dp"
+			        android:paddingLeft="6dp"
+			        android:paddingTop="8dp"
+                    android:inputType="textCapSentences|textMultiLine" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1.0" >
+
+                <Button
+					style="@style/EkzButton"
+                    android:id="@+id/buttonOK"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:enabled="false"
+                    android:text="@string/uebernehmen" />
+
+                <Button
+					style="@style/EkzButton"
+                    android:id="@+id/buttonCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/cancel" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

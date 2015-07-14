@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item 
+        android:id="@+id/menu_zettel_clear" 
+        android:title="Streichungen zurücksetzen"
+        android:icon="@drawable/men_zettel_clear">
+    </item>
+    <item 
+        android:id="@+id/menu_zettel_settings" 
+        android:title="Einstellungen" 
+        android:icon="@drawable/men_zettel_settings">
+    </item>
+    
+</menu>

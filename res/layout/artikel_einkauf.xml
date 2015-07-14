@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/back_zettel"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+        <Spinner
+            android:id="@+id/spinnerArtikel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+            <!-- Preview: listitem=@layout/artikel_listitem -->
+        </Spinner>
+
+        <Button
+            android:id="@+id/buttonAddArtikel"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="bottom"
+            android:minWidth="40dp"
+            android:text="@string/plus" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.00" >
+    	
+    	<AutoCompleteTextView
+    	    android:id="@+id/autoTextArtikel"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_weight="1"
+    	    android:capitalize="words"
+    	    android:singleLine="true"
+    	    android:text="" 
+	        android:layout_marginBottom="8dp"
+    	   	android:background="#aaffff00"
+        	android:paddingBottom="8dp"
+        	android:paddingLeft="6dp"
+        	android:paddingTop="8dp" />
+
+        <Button
+            android:id="@+id/buttonAddText"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:enabled="false"
+            android:minWidth="40dp"
+            android:text="@string/plus" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listeArtikel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="#0000FF"
+        android:dividerHeight="2px" >
+
+        <!-- Preview: listitem=@layout/einkauf_artikel_listitem --> 
+        
+    </ListView>
+
+</LinearLayout>
+

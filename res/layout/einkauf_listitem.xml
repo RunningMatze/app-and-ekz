@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#aaffff00" >
+
+    <ImageView
+        android:id="@+id/imageEinkauf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/einkaufslisten" />
+
+    <TextView
+        android:id="@+id/textDatum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageEinkauf"
+        android:text="@string/einkauf_datum"
+		android:textColor="#0000c0"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textShopOrt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textDatum"
+        android:layout_toRightOf="@+id/imageEinkauf"
+        android:text="@string/shop"
+        android:textColor="#0000c0"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>

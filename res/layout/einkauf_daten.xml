@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ed_wrapper"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	android:background="@drawable/back_zettel"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/transparent" >
+
+            <RelativeLayout
+                android:id="@+id/buttonArtikel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+				android:background="#aaffff00"
+                android:layout_marginTop="6dp" >
+
+                <TextView
+                    android:id="@+id/labelEinkaufAm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/einkaufam"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/labelEinkaufBei"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/labelEinkaufAm"
+                    android:text="@string/einkaufbei"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/labelEinkaufIn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/labelEinkaufBei"
+                    android:text="@string/einkaufin"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/textDatum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/labelEinkaufAm"
+                    android:text="-datum-"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#0000c0" />
+
+                <TextView
+                    android:id="@+id/textShop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/labelEinkaufBei"
+                    android:layout_alignBottom="@+id/labelEinkaufBei"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/labelEinkaufBei"
+                    android:text="-shop-"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#0000c0" />
+
+                <TextView
+                    android:id="@+id/textOrt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textShop"
+                    android:layout_below="@+id/textShop"
+                    android:text="-ort-"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#0000c0" />
+
+                <TextView
+                    android:id="@+id/labelBemerkungen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/textOrt"
+                    android:layout_marginTop="6dp"
+                    android:text="@string/bemerkungen"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/textBemerkungen"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/labelBemerkungen"
+                    android:text="-bemerkungen-"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#0000c0" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/textBemerkungen"
+                    android:layout_marginTop="10dp" >
+
+                    <Button
+						style="@style/EkzButton"
+                        android:id="@+id/buttonChange"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:text="@string/change" />
+
+                    <Button
+						style="@style/EkzButton"
+                        android:id="@+id/buttonBack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:text="@string/back" />
+                </LinearLayout>
+
+                <Button
+					style="@style/EkzButton"
+                    android:id="@+id/buttonAddArtikel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/linearLayout1"
+                    android:text="@string/artikelliste_change" />
+            </RelativeLayout>
+
+       </ScrollView>
+
+</LinearLayout>
